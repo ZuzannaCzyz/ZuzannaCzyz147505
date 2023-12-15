@@ -24,8 +24,8 @@ class Employee:
 
     def __str__(self):
         return (f"Employee: {self.first_name} {self.last_name}\nHire date:"
-                f" {self.hire_date}\nBirth date: {self.birth_date}\n") \
-               f"Address: {self.city}, {self.street}, {self.zip_code}\nPhone: {self.phone}"
+                f" {self.hire_date}\nBirth date: {self.birth_date}\n"
+                f"Address: {self.city}, {self.street}, {self.zip_code}\nPhone: {self.phone}")
 
 
 class Student:
@@ -60,8 +60,8 @@ class Order:
     def __str__(self):
         book_list = "\n".join([f"{book}" for book in self.books])
         return (f"Order by {self.employee.first_name} {self.employee.last_name} for "
-                f"{self.student.first_name} {self.student.last_name}\n") \
-                f"Order date: {self.order_date}\nBooks:\n{book_list}"
+                f"{self.student.first_name} {self.student.last_name}\n"
+                f"Order date: {self.order_date}\nBooks:\n{book_list}")
 
 
 library1 = Library("City1", "Street1", "12345", "9:00 - 5:00", "123-456-789")
